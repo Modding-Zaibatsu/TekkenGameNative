@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{BD46E318-42CE-9B29-8508-2D8816BF2367}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "TekkenGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"UnrealEd"
+			]
+		}
+	]
+}
