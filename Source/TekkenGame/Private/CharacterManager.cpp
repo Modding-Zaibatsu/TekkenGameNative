@@ -1,28 +1,65 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "TekkenGameModule.h"
+#include "CharacterManager.h"
 
-#include "TekkenGame.h"
-#include "Public/CharacterManager.h"
+class ATekkenCharacterLoadHelper;
+class UCharacterItemSet;
 
-
-// Sets default values
-ACharacterManager::ACharacterManager()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+void ACharacterManager::UnloadAsyncLoadItemSet() {
 }
 
-// Called when the game starts or when spawned
-void ACharacterManager::BeginPlay()
-{
-	Super::BeginPlay();
-	
+
+
+
+
+
+
+
+
+void ACharacterManager::PreAsynLoadCustomizeDataSetup() {
 }
 
-// Called every frame
-void ACharacterManager::Tick( float DeltaTime )
-{
-	Super::Tick( DeltaTime );
+void ACharacterManager::PostAsynLoadCustomizeDataTerminate() {
+}
 
+UCharacterItemSet* ACharacterManager::LoadItemSetFromXML(int32 selectedSetIndex, TEnumAsByte<CharacterItemEditor::Type> FighterId, int32 PlayerID) {
+    return NULL;
+}
+
+UCharacterItemSet* ACharacterManager::LoadItemSetFromCustomizeData(int32 selectedSetIndex, TEnumAsByte<CharacterItemEditor::Type> FighterId, int32 PlayerID) {
+    return NULL;
+}
+
+FString ACharacterManager::GetUniqueCostumePath(int32 PlayerID) {
+    return TEXT("");
+}
+
+int32 ACharacterManager::GetPlayerSide() {
+    return 0;
+}
+
+TEnumAsByte<ECostumeType> ACharacterManager::GetDesiredCostumeType(int32 PlayerID) {
+    return Color_1P_FR;
+}
+
+ATekkenCharacterLoadHelper* ACharacterManager::GetCharacterLoadHelper() {
+    return NULL;
+}
+
+UCharacterItemSet* ACharacterManager::Find2PColorItemSet(UCharacterItemSet* Player1ItemSet) {
+    return NULL;
+}
+
+UCharacterItemSet* ACharacterManager::FillItemSet(UCharacterItemSet* DefaultSet, UCharacterItemSet* CustomizedSet) {
+    return NULL;
+}
+
+
+
+void ACharacterManager::AsyncLoadItemSetFromCustomizeData(int32 selectedSetIndex, TEnumAsByte<CharacterItemEditor::Type> FighterId, int32 PlayerID, FCharacterAsyncLoadDynamicDelegate Delegate) {
+}
+
+ACharacterManager::ACharacterManager() {
+    this->bAsyncLoadComplete = false;
+    this->bAsyncLoadCanceled = false;
 }
 

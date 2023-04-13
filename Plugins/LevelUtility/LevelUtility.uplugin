@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "LevelUtility",
+	"Description": "",
+	"Category": "Utilities",
+	"CreatedBy": "BandaiNamcoStudio, Inc.",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "LevelUtility",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

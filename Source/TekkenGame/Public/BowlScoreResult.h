@@ -1,0 +1,17 @@
+#pragma once
+
+#include "BowlScoreResult.generated.h"
+
+UENUM(BlueprintType)
+enum BowlScoreResult {
+    BOWL_SCORE_RESULT_NORMAL,
+    BOWL_SCORE_RESULT_MISS,
+    BOWL_SCORE_RESULT_GUTTER,
+    BOWL_SCORE_RESULT_FOUL,
+    BOWL_SCORE_RESULT_SPARE,
+    BOWL_SCORE_RESULT_STRIKE,
+    BOWL_SCORE_RESULT_SPLIT,
+    BOWL_SCORE_RESULT_SPLIT_NAME,
+    BOWL_SCORE_RESULT_MAX UMETA(Hidden),
+};
+

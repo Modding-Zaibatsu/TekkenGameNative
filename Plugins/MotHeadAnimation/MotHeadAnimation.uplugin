@@ -1,0 +1,22 @@
+{
+	"PluginFileVersion" : 1,
+
+	"FriendlyName" : "MotHead Animation Node",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "NAMCO BANDAI Studios, Inc.",
+	"CreatedByURL" : "http://www.bandainamcostudios.co.jp/",
+	"MinEngineVersion" : 1579795,
+	"Description" : "Animation node controled by mothead",
+	"CategoryPath" : "Editor Features.Animation",
+	
+	"Modules" :
+	[
+		{
+			"Name" : "MotHeadAnimationRuntime",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreDefault"
+		}
+	],
+	"FileVersion": 3
+}
