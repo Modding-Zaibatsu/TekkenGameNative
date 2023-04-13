@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 2.1,
+	"VersionName": "2.1.368",
+	"FriendlyName": "NeoFur",
+	"Description": "This plugin allows users to easily simulate incredible fur on objects and characters in realtime.",
+
+	"CreatedBy": "Neoglyphic Entertainment",
+	"CreatedByURL": "http://www.neoglyphic.com/neofur/",
+	"DocsURL": "http://support.neoglyphic.com/",
+	"MarketplaceURL": "https://www.unrealengine.com/marketplace/neofur",
+	"SupportURL": "neofur@neoglyphic.com",
+	"Modules": [
+		{
+			"Name": "NeoFur",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit"
+		}
+	],
+	"EnabledByDefault": true,
+	"CanContainContent": true,	
+	"IsBetaVersion": false,
+    "Category" : "Neoglyphic",
+	"Installed": false
+}

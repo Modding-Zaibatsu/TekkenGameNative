@@ -1,17 +1,13 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "GameFramework/PlayerController.h"
+
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PlayerController -FallbackName=PlayerController
 #include "TekkenPlayerController.generated.h"
 
-/**
- * 
- */
-UCLASS()
-class TEKKENGAME_API ATekkenPlayerController : public APlayerController
-{
-	GENERATED_BODY()
-	
-	
+UCLASS(Blueprintable)
+class ATekkenPlayerController : public APlayerController {
+    GENERATED_BODY()
+public:
+    ATekkenPlayerController();
 };
+

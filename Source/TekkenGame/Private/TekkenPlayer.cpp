@@ -1,35 +1,28 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "TekkenGameModule.h"
+#include "TekkenPlayer.h"
 
-#include "TekkenGame.h"
-#include "Public/TekkenPlayer.h"
+class ATekkenCharacterEffectManager;
+class ATekkenCharacterSoundManager;
 
-
-// Sets default values
-ATekkenPlayer::ATekkenPlayer()
-{
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+void ATekkenPlayer::SetSoundManager(ATekkenCharacterSoundManager* SoundManager) {
 }
 
-// Called when the game starts or when spawned
-void ATekkenPlayer::BeginPlay()
-{
-	Super::BeginPlay();
-	
+void ATekkenPlayer::SetEffectManager(ATekkenCharacterEffectManager* EffectManager) {
 }
 
-// Called every frame
-void ATekkenPlayer::Tick( float DeltaTime )
-{
-	Super::Tick( DeltaTime );
-
+ATekkenCharacterSoundManager* ATekkenPlayer::GetSoundManager() {
+    return NULL;
 }
 
-// Called to bind functionality to input
-void ATekkenPlayer::SetupPlayerInputComponent(class UInputComponent* InputComponent)
-{
-	Super::SetupPlayerInputComponent(InputComponent);
+float ATekkenPlayer::GetPlayerControlYaw() {
+    return 0.0f;
+}
 
+ATekkenCharacterEffectManager* ATekkenPlayer::GetEffectManager() {
+    return NULL;
+}
+
+ATekkenPlayer::ATekkenPlayer() {
+    this->PlayerNumber = 0;
 }
 

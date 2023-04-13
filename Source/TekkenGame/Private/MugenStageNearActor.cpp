@@ -1,28 +1,37 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "TekkenGameModule.h"
+#include "MugenStageNearActor.h"
 
-#include "TekkenGame.h"
-#include "Public/MugenStageNearActor.h"
+class UObject;
 
-
-// Sets default values
-AMugenStageNearActor::AMugenStageNearActor()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+void AMugenStageNearActor::SetTileNum(int32 X, int32 Y) {
 }
 
-// Called when the game starts or when spawned
-void AMugenStageNearActor::BeginPlay()
-{
-	Super::BeginPlay();
-	
+void AMugenStageNearActor::SetTileLocation(UObject* pObj, FVector Pos) {
 }
 
-// Called every frame
-void AMugenStageNearActor::Tick( float DeltaTime )
-{
-	Super::Tick( DeltaTime );
+void AMugenStageNearActor::SetSize(float X, float Y) {
+}
 
+void AMugenStageNearActor::SetRadiusOfNearFloor(float R) {
+}
+
+void AMugenStageNearActor::SetCenterPos(FVector centerPos) {
+}
+
+void AMugenStageNearActor::MySetLocation2(TArray<UObject*> tiles) {
+}
+
+bool AMugenStageNearActor::IsOutOfBounds(FVector Pos) {
+    return false;
+}
+
+void AMugenStageNearActor::CalcTileOffset() {
+}
+
+FVector AMugenStageNearActor::CalcRelativePos(int32 Index, float Z) {
+    return FVector{};
+}
+
+AMugenStageNearActor::AMugenStageNearActor() {
 }
 

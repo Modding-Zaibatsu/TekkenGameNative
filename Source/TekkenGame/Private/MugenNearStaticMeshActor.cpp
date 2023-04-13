@@ -1,8 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "TekkenGameModule.h"
+#include "MugenNearStaticMeshActor.h"
 
-#include "TekkenGame.h"
-#include "Public/MugenNearStaticMeshActor.h"
+int32 AMugenNearStaticMeshActor::GetTileNumber_Implementation() const {
+    return 0;
+}
 
-
-
+AMugenNearStaticMeshActor::AMugenNearStaticMeshActor() {
+    this->TileNumber = 0;
+}
 

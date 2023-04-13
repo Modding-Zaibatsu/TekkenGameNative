@@ -1,41 +1,43 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "GameFramework/Actor.h"
+
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "MugenStageNearActor.generated.h"
 
-UCLASS()
-class TEKKENGAME_API AMugenStageNearActor : public AActor
-{
-	GENERATED_BODY()
+class UObject;
 
-	UPROPERTY()
-	float NearFloorRadius;
-
-	UPROPERTY()
-	FString NearFloorTag;
-	
-public:	
-	// Sets default values for this actor's properties
-	AMugenStageNearActor();
-
-	
-
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-	
-	// Called every frame
-	virtual void Tick( float DeltaSeconds ) override;
-
-	
-	void SetTileNum(int X, int Y);
-	void SetTileLocation(class UObject* pObj, const struct FVector& Pos);
-	void SetSize(float X, float Y);
-	void SetRadiusOfNearFloor(float R);
-	void SetCenterPos(const struct FVector& centerPos);
-	void MySetLocation2(TArray<class UObject*> tiles);
-	bool IsOutOfBounds(const struct FVector& Pos);
-	void CalcTileOffset();
-	struct FVector CalcRelativePos(int Index, float Z);
+UCLASS(Blueprintable)
+class AMugenStageNearActor : public AActor {
+    GENERATED_BODY()
+public:
+    AMugenStageNearActor();
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void SetTileNum(int32 X, int32 Y);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void SetTileLocation(UObject* pObj, FVector Pos);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void SetSize(float X, float Y);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void SetRadiusOfNearFloor(float R);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void SetCenterPos(FVector centerPos);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void MySetLocation2(TArray<UObject*> tiles);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    bool IsOutOfBounds(FVector Pos);
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    void CalcTileOffset();
+    
+    UFUNCTION(BlueprintCallable, Category="Other")
+    FVector CalcRelativePos(int32 Index, float Z);
+    
 };
+

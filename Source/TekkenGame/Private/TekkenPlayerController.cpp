@@ -1,8 +1,6 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "TekkenGameModule.h"
+#include "TekkenPlayerController.h"
 
-#include "TekkenGame.h"
-#include "Public/TekkenPlayerController.h"
-
-
-
+ATekkenPlayerController::ATekkenPlayerController() {
+}
 
