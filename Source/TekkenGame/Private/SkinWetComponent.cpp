@@ -4,8 +4,8 @@
 USkinWetComponent::USkinWetComponent() {
     this->Collection = NULL;
     this->Preview1P = false;
-    this->WetValue1P = 140700621893344;
+    this->WetValue1P = 0;
     this->Preview2P = false;
-    this->WetValue2P = 140700621893344;
+    this->WetValue2P = 0;
 }
 

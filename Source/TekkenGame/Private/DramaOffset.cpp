@@ -2,7 +2,7 @@
 #include "DramaOffset.h"
 
 FDramaOffset::FDramaOffset() {
-    this->Rotation = 140700621893344;
+    this->Rotation = 0;
     this->AbsoluteFlag = false;
 }
 

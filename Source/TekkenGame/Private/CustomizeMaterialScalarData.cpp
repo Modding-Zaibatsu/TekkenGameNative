@@ -2,6 +2,6 @@
 #include "CustomizeMaterialScalarData.h"
 
 FCustomizeMaterialScalarData::FCustomizeMaterialScalarData() {
-    this->Scalar = 140700621893344;
+    this->Scalar = 0;
 }
 

@@ -2,10 +2,10 @@
 #include "SpotLightParameters.h"
 
 FSpotLightParameters::FSpotLightParameters() {
-    this->Intensity = 140700621893344;
-    this->ConeAngle = 140700621893344;
-    this->ConeRadius = 140700621893344;
-    this->FalloffExponent = 140700621893344;
+    this->Intensity = 0;
+    this->ConeAngle = 0;
+    this->ConeRadius = 0;
+    this->FalloffExponent = 0;
     this->bUseInverseSquaredFalloff = false;
 }
 

@@ -2,6 +2,6 @@
 #include "TekkenDramaActorHenchman.h"
 
 ATekkenDramaActorHenchman::ATekkenDramaActorHenchman() {
-    this->GameSpeedDilation = 140700621893344;
+    this->GameSpeedDilation = 0;
 }
 

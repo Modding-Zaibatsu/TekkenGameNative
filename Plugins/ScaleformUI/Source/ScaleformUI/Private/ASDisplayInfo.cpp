@@ -2,10 +2,10 @@
 #include "ASDisplayInfo.h"
 
 FASDisplayInfo::FASDisplayInfo() {
-    this->Rotation = 140700621893344;
-    this->XRotation = 140700621893344;
-    this->YRotation = 140700621893344;
-    this->Alpha = 140700621893344;
+    this->Rotation = 0;
+    this->XRotation = 0;
+    this->YRotation = 0;
+    this->Alpha = 0;
     this->Visible = false;
 }
 

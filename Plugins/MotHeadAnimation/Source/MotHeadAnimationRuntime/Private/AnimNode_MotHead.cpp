@@ -4,7 +4,7 @@
 FAnimNode_MotHead::FAnimNode_MotHead() {
     this->MotHeadMatrixSpace = MHM_WorldSpace;
     this->ControlSpace = BCS_WorldSpace;
-    this->SpaceScaling = 140700621893344;
+    this->SpaceScaling = 0;
     this->PlayerNumber = 0;
 }
 

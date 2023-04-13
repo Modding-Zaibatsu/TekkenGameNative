@@ -11,9 +11,9 @@ void AAkReverbVolume::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 AAkReverbVolume::AAkReverbVolume() {
     this->bEnabled = true;
     this->AuxBus = NULL;
-    this->SendLevel = 140700621893344;
-    this->FadeRate = 140700621893344;
-    this->Priority = 140700621893344;
+    this->SendLevel = 0;
+    this->FadeRate = 0;
+    this->Priority = 0;
     this->NextLowerPriorityAkReverbVolume = NULL;
 }
 

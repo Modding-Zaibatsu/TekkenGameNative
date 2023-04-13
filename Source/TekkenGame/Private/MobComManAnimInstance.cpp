@@ -3,8 +3,8 @@
 
 UMobComManAnimInstance::UMobComManAnimInstance() {
     this->bUseFocus = false;
-    this->BaseYaw = 140700621893344;
-    this->BasePitch = 140700621893344;
+    this->BaseYaw = 0;
+    this->BasePitch = 0;
     this->MobState = EMobState::Idle_State;
     this->IdleAnimation = NULL;
     this->CheerAnimation = NULL;

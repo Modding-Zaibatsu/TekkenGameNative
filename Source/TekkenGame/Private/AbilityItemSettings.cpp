@@ -9,15 +9,15 @@ FAbilityItemSettings::FAbilityItemSettings() {
     this->DropFromSocket = Head_Socket;
     this->NumToDrop = 0;
     this->bScaleItemRandomly = false;
-    this->scaleFloor = 140700621893344;
-    this->scaleCeiling = 140700621893344;
+    this->scaleFloor = 0;
+    this->scaleCeiling = 0;
     this->MaxSpawnedDebris = 0;
     this->DebrisSpawnPerHit = 0;
     this->bCustomRotate = false;
-    this->CustomRotateSpeed = 140700621893344;
+    this->CustomRotateSpeed = 0;
     this->bImpusleVelChange = false;
-    this->ImpulseStrMin = 140700621893344;
-    this->ImpulseStrMax = 140700621893344;
+    this->ImpulseStrMin = 0;
+    this->ImpulseStrMax = 0;
     this->bPseudoHitOnCancel = false;
     this->bDropOnCancel = false;
 }

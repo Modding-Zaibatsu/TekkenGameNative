@@ -51,7 +51,7 @@ UCharacterItem::UCharacterItem() {
     this->ItemAB = NULL;
     this->HairAccType = Not_A_Hair_Acc;
     this->bCanChangeClothBlend = false;
-    this->ItemHeight = 140700621893344;
+    this->ItemHeight = 0;
     this->bUseEquippedHeights = false;
     this->bItemAffectedBySlope = false;
     this->bIsFurItem = false;

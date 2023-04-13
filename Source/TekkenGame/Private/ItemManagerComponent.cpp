@@ -97,6 +97,6 @@ void UItemManagerComponent::AddPrerequisiteTickToMesh(USkeletalMeshComponent* Me
 }
 
 UItemManagerComponent::UItemManagerComponent() {
-    this->TotalHeightOffset = 140700621893344;
+    this->TotalHeightOffset = 0;
 }
 

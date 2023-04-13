@@ -29,10 +29,10 @@ ACharacterItemBlueprintWDrop::ACharacterItemBlueprintWDrop() {
     this->AnimType = EWazaItemAnimType::Unassigned;
     this->UpperAccAnim = EDropUpperAccAnim::Unassigned;
     this->LowerAccAnim = EDropLowerAccAnim::Unassigned;
-    this->ScaleLowerLimit = 140700621893344;
-    this->ScaleUpperLimit = 140700621893344;
+    this->ScaleLowerLimit = 0;
+    this->ScaleUpperLimit = 0;
     this->bScaleFromList = false;
     this->ItemScales.AddDefaulted(1);
-    this->ItemDropMax = 140700621893344;
+    this->ItemDropMax = 0;
 }
 

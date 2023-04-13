@@ -2,10 +2,10 @@
 #include "CharacterPostEffectParameter.h"
 
 FCharacterPostEffectParameter::FCharacterPostEffectParameter() {
-    this->FresnelExponent = 140700621893344;
-    this->FresnelIntensity = 140700621893344;
+    this->FresnelExponent = 0;
+    this->FresnelIntensity = 0;
     this->FresnelDirectivity = false;
-    this->FresnelDirectivitySharpness = 140700621893344;
-    this->FresnelDirectivitySuppression = 140700621893344;
+    this->FresnelDirectivitySharpness = 0;
+    this->FresnelDirectivitySuppression = 0;
 }
 

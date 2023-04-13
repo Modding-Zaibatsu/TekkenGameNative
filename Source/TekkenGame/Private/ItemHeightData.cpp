@@ -5,7 +5,7 @@ FItemHeightData::FItemHeightData() {
     this->bAffectedByHeights = false;
     this->bAffectedBySlopes = false;
     this->bPreviewNewHeights = false;
-    this->ItemHeight = 140700621893344;
+    this->ItemHeight = 0;
     this->DirtyData = false;
 }
 

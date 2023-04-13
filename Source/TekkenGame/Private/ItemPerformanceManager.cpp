@@ -37,7 +37,7 @@ AItemPerformanceManager::AItemPerformanceManager() {
     this->Character = ECustomizeCharacterManager::PAU;
     this->CostumeType = DefaultDebug;
     this->SampleCount = 0;
-    this->StatTimeThreshold = 140700621893344;
+    this->StatTimeThreshold = 0;
     this->bExclusiveLoadReleaseVer = false;
     this->DebugReleaseVer = ItemVersionUnset;
     this->bSampleUpperBody = true;

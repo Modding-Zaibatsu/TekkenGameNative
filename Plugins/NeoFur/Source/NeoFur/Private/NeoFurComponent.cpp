@@ -30,14 +30,14 @@ FNeoFurPhysicsParameters UNeoFurComponent::GetFurPhysicsParameters() const {
 UNeoFurComponent::UNeoFurComponent() {
     this->FurAsset = NULL;
     this->ShellCount = 0;
-    this->ShellDistance = 140700621893344;
-    this->LODStartDistance = 140700621893344;
-    this->LODEndDistance = 140700621893344;
+    this->ShellDistance = 0;
+    this->LODStartDistance = 0;
+    this->LODEndDistance = 0;
     this->LODMinimumShellCount = 0;
-    this->MaximumDistanceFromCamera = 140700621893344;
-    this->VisibleLengthScale = 140700621893344;
+    this->MaximumDistanceFromCamera = 0;
+    this->VisibleLengthScale = 0;
     this->ShellOffsetTextureCoordinateIndex = 0;
-    this->ActiveShellCountScale = 140700621893344;
+    this->ActiveShellCountScale = 0;
     this->bForceCPUSimulation = false;
     this->bSkipSimulation = false;
     this->bSkipRendering = false;

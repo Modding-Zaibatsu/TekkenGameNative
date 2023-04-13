@@ -3,6 +3,6 @@
 
 UAkAudioEvent::UAkAudioEvent() {
     this->RequiredBank = NULL;
-    this->MaxAttenuationRadius = 140700621893344;
+    this->MaxAttenuationRadius = 0;
 }
 

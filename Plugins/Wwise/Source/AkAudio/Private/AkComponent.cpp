@@ -45,8 +45,8 @@ float UAkComponent::GetAttenuationRadius() const {
 
 UAkComponent::UAkComponent() {
     this->StopWhenOwnerDestroyed = true;
-    this->AttenuationScalingFactor = 140700621893344;
-    this->OcclusionRefreshInterval = 140700621893344;
+    this->AttenuationScalingFactor = 0;
+    this->OcclusionRefreshInterval = 0;
     this->AkAudioEvent = NULL;
 }
 

@@ -3,6 +3,6 @@
 
 FCharacterMaterialScalar::FCharacterMaterialScalar() {
     this->ScalarType = Metallic;
-    this->Value = 140700621893344;
+    this->Value = 0;
 }
 

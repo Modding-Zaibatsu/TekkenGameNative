@@ -2,7 +2,7 @@
 #include "AkAudioEventTrackKey.h"
 
 FAkAudioEventTrackKey::FAkAudioEventTrackKey() {
-    this->Time = 140700621893344;
+    this->Time = 0;
     this->AkAudioEvent = NULL;
 }
 

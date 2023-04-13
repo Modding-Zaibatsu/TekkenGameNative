@@ -31,6 +31,6 @@ ATekkenVR::ATekkenVR() {
     this->CollideFlag = false;
     this->VRViewerDbg = false;
     this->ParentPawn = NULL;
-    this->ViewerCharacterBodyScale = 140700621893344;
+    this->ViewerCharacterBodyScale = 0;
 }
 

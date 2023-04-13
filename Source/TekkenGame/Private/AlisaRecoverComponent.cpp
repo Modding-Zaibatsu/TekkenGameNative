@@ -17,9 +17,9 @@ UAlisaRecoverComponent::UAlisaRecoverComponent() {
     this->Collection = NULL;
     this->AlisaHeadMesh = NULL;
     this->AlisaArmMesh = NULL;
-    this->HeadRecoverSpeed = 140700621893344;
-    this->ArmRecoverSpeed = 140700621893344;
-    this->MaxRadius = 140700621893344;
-    this->SafeRadius = 140700621893344;
+    this->HeadRecoverSpeed = 0;
+    this->ArmRecoverSpeed = 0;
+    this->MaxRadius = 0;
+    this->SafeRadius = 0;
 }
 

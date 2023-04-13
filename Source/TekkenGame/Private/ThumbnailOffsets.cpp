@@ -2,6 +2,6 @@
 #include "ThumbnailOffsets.h"
 
 FThumbnailOffsets::FThumbnailOffsets() {
-    this->DefaultFOV = 140700621893344;
+    this->DefaultFOV = 0;
 }
 

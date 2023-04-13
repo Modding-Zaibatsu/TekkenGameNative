@@ -2,6 +2,6 @@
 #include "TkBowlSubtitleAnimNotify.h"
 
 UTkBowlSubtitleAnimNotify::UTkBowlSubtitleAnimNotify() {
-    this->LifeSpan = 140700621893344;
+    this->LifeSpan = 0;
 }
 

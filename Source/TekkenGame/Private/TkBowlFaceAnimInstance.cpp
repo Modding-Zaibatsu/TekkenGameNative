@@ -9,7 +9,7 @@ void UTkBowlFaceAnimInstance::DisableFaceMontage() {
 
 UTkBowlFaceAnimInstance::UTkBowlFaceAnimInstance() {
     this->bPlayingFaceMontage = false;
-    this->FaceBlendWeight = 140700621893344;
+    this->FaceBlendWeight = 0;
     this->FaceAnimMontage = NULL;
 }
 

@@ -6,7 +6,7 @@
     this->UpdateLocation_ = false;
     this->UpdateRootComponentLocation_ = false;
     this->UseDistFromCamera = true;
-    this->BaseFOV = 140700621893344;
+    this->BaseFOV = 0;
     this->ShapeType = CAMLOC_SHAPE_OFFSET_TYPE_NONE;
     this->Positive_X = true;
     this->Positive_Y = true;

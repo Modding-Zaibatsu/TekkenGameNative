@@ -7,7 +7,7 @@ FEquipInfo::FEquipInfo() {
     this->ItemPosition = HEAD;
     this->ParentPosition = HEAD;
     this->ItemActor = NULL;
-    this->ItemHeight = 140700621893344;
+    this->ItemHeight = 0;
     this->bIsFurItem = false;
 }
 

@@ -4,14 +4,14 @@
 FTkBowlFrameParamStats::FTkBowlFrameParamStats() {
     this->FrameNum = 0;
     this->TryNum = 0;
-    this->BallPower = 140700621893344;
-    this->BallSpin = 140700621893344;
-    this->CharacterYaw = 140700621893344;
-    this->CharacterAxisX = 140700621893344;
-    this->ThrownBallAxisX = 140700621893344;
-    this->BallSpawnAxisX = 140700621893344;
-    this->BallSpawnAxisY = 140700621893344;
-    this->BallSpawnAxisZ = 140700621893344;
-    this->BallSpawnYaw = 140700621893344;
+    this->BallPower = 0;
+    this->BallSpin = 0;
+    this->CharacterYaw = 0;
+    this->CharacterAxisX = 0;
+    this->ThrownBallAxisX = 0;
+    this->BallSpawnAxisX = 0;
+    this->BallSpawnAxisY = 0;
+    this->BallSpawnAxisZ = 0;
+    this->BallSpawnYaw = 0;
 }
 

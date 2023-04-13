@@ -9,7 +9,7 @@ ATekkenCharacterMissileHitEffect::ATekkenCharacterMissileHitEffect() {
     this->ClashFX = NULL;
     this->FloorHitFX = NULL;
     this->HitLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("HitLight"));
-    this->ClashFXForwardVectorOffset = 140700621893344;
-    this->HitLightFadeOut = 140700621893344;
+    this->ClashFXForwardVectorOffset = 0;
+    this->HitLightFadeOut = 0;
 }
 

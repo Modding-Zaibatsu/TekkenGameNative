@@ -16,10 +16,10 @@ UTkBowlSpringArmComponent::UTkBowlSpringArmComponent() {
     this->bChangePositionToUpCamera = false;
     this->bLockToUpdateTargetLocation = false;
     this->bRollCameraAngleByBallVelocity = false;
-    this->CameraUpDistance = 140700621893344;
-    this->CameraUpBlendTime = 140700621893344;
-    this->CameraUpBlendTimeToGo = 140700621893344;
-    this->CameraRollAmplifier = 140700621893344;
-    this->CameraRollDesired = 140700621893344;
+    this->CameraUpDistance = 0;
+    this->CameraUpBlendTime = 0;
+    this->CameraUpBlendTimeToGo = 0;
+    this->CameraRollAmplifier = 0;
+    this->CameraRollDesired = 0;
 }
 

@@ -4,6 +4,6 @@
 FWallBarrierGroup::FWallBarrierGroup() {
     this->LocalFacade = false;
     this->DisableBarrierIfBroken = false;
-    this->EffectAlphaOffset = 140700621893344;
+    this->EffectAlphaOffset = 0;
 }
 

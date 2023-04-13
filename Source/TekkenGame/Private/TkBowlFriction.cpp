@@ -27,7 +27,7 @@ void ATkBowlFriction::EnableUpdateFriction(UStaticMeshComponent* Bowl, bool enab
 }
 
 ATkBowlFriction::ATkBowlFriction() {
-    this->MaxFriction = 140700621893344;
-    this->MinFriction = 140700621893344;
+    this->MaxFriction = 0;
+    this->MinFriction = 0;
 }
 

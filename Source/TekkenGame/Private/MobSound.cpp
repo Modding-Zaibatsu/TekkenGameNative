@@ -3,6 +3,6 @@
 
 FMobSound::FMobSound() {
     this->EventSound = NULL;
-    this->SoundDelay = 140700621893344;
+    this->SoundDelay = 0;
 }
 

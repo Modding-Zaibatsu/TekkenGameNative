@@ -9,6 +9,6 @@ float ATekkenDramaActor::GetGameSpeedDilation() {
 }
 
 ATekkenDramaActor::ATekkenDramaActor() {
-    this->GameSpeedDilation = 140700621893344;
+    this->GameSpeedDilation = 0;
 }
 

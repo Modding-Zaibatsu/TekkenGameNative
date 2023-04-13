@@ -3,7 +3,7 @@
 
 FHitDecalData::FHitDecalData() {
     this->DecalMaterial = NULL;
-    this->DecalSize = 140700621893344;
-    this->LifeSpan = 140700621893344;
+    this->DecalSize = 0;
+    this->LifeSpan = 0;
 }
 
