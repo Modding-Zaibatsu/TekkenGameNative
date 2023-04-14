@@ -14,18 +14,21 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAkAudioEvent* AkAudioEvent;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    UAkComponent* AkComponent;
-    
     UPROPERTY(BlueprintReadWrite, EditAnywhere, SimpleDisplay, meta=(AllowPrivateAccess=true))
     bool StopWhenOwnerIsDestroyed;
     
     AAkAmbientSound();
+    
     UFUNCTION(BlueprintCallable, Category="Other")
     void StopAmbientSound();
     
     UFUNCTION(BlueprintCallable, Category="Other")
     void StartAmbientSound();
+
+private:
+
+    UPROPERTY(BlueprintReadOnly, VisibleDefaultsOnly,  meta = (AllowPrivateAccess = "true"))
+    UAkComponent* AkComponent;
     
 };
 

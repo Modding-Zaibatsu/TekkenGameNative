@@ -1,6 +1,6 @@
 {
 	"FileVersion" : 1,
-	
+
 	"FriendlyName" : "Wwise Unreal Engine 4 Integration",
 	"Version" : 201612,
 	"VersionName" : "2016.1.3 build 5878",
@@ -10,15 +10,21 @@
 	"Description" : "Wwise integration for Unreal Engine 4",
 	"Category" : "Audio",
 	"EnabledByDefault" : false,
-	
+
 	"Modules" :
 	[
 		{
 			"Name" : "AkAudio",
 			"Type" : "Runtime",
 			"LoadingPhase" : "PreDefault"
+		},
+		{
+			"Name" : "AkAudioEditor",
+			"Type" : "Editor",
+			"LoadingPhase" : "PostEngineInit"
 		}
+		
 	],
-	
+
 	"CanContainContent" : true
 }

@@ -25,23 +25,6 @@ UCLASS(Blueprintable)
 class AModularTekkenPlayer : public ATekkenPlayer {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    UCapsuleComponent* CapsuleComponent;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USkeletalMeshComponent* FaceMesh;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USkeletalMeshComponent* HairMesh;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USkeletalMeshComponent* FaceHairMesh;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USkeletalMeshComponent* UpperMesh;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USkeletalMeshComponent* LowerMesh;
     
     AModularTekkenPlayer();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category="Other")
@@ -121,6 +104,26 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category="Other")
     void ClearAsyncLoadMeshVariations();
+
+private:
+
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere,  meta = (AllowPrivateAccess = "true"))
+    UCapsuleComponent* CapsuleComponent;
+    
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere,  meta = (AllowPrivateAccess = "true"))
+    USkeletalMeshComponent* FaceMesh;
+    
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere,  meta = (AllowPrivateAccess = "true"))
+    USkeletalMeshComponent* HairMesh;
+    
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere,  meta = (AllowPrivateAccess = "true"))
+    USkeletalMeshComponent* FaceHairMesh;
+    
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere,  meta = (AllowPrivateAccess = "true"))
+    USkeletalMeshComponent* UpperMesh;
+    
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere,  meta = (AllowPrivateAccess = "true"))
+    USkeletalMeshComponent* LowerMesh;
     
 };
 
