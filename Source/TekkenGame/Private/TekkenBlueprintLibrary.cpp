@@ -107,10 +107,14 @@ void UTekkenBlueprintLibrary::SetForceFacingLocation(int32 side, bool sw, FVecto
 void UTekkenBlueprintLibrary::SetDisablePostAkEvent(bool flag) {
 }
 
-void UTekkenBlueprintLibrary::SetCastInsetShadow(UPrimitiveComponent* Component, bool bEnabled) {
+void UTekkenBlueprintLibrary::SetCastInsetShadow(UPrimitiveComponent* Component, bool bEnabled)
+{
+    Component->bCastInsetShadow = bEnabled;
 }
 
-void UTekkenBlueprintLibrary::SetCastHiddenShadow(UPrimitiveComponent* Component, bool bEnabled) {
+void UTekkenBlueprintLibrary::SetCastHiddenShadow(UPrimitiveComponent* Component, bool bEnabled)
+{
+    Component->bCastHiddenShadow = bEnabled;
 }
 
 int32 UTekkenBlueprintLibrary::ResolveSceneBGMID(int32 nStageID, const FString& StateString) {
@@ -216,7 +220,7 @@ bool UTekkenBlueprintLibrary::IsPlayingMovelistDemonstration() {
 }
 
 bool UTekkenBlueprintLibrary::IsPlayInEditor(UObject* WorldContextObject) {
-    return false;
+    return true;
 }
 
 bool UTekkenBlueprintLibrary::IsPlayerVisible(int32 PlayerNumber) {
@@ -260,7 +264,7 @@ bool UTekkenBlueprintLibrary::isEnableFighterId(int32 fighter_id) {
 }
 
 bool UTekkenBlueprintLibrary::IsEditor() {
-    return false;
+    return true;
 }
 
 bool UTekkenBlueprintLibrary::IsDown2(int32 player_id) {
@@ -299,7 +303,8 @@ int32 UTekkenBlueprintLibrary::IncrementStageSequenceId(UObject* WorldContextObj
     return 0;
 }
 
-ATekkenPlayerController* UTekkenBlueprintLibrary::GetTekkenPlayerController() {
+ATekkenPlayerController* UTekkenBlueprintLibrary::GetTekkenPlayerController()
+{
     return NULL;
 }
 
@@ -455,7 +460,8 @@ int32 UTekkenBlueprintLibrary::GetCannotMoveFrame(int32 PlayerNumber) {
     return 0;
 }
 
-APawn* UTekkenBlueprintLibrary::GetCameraPawn() {
+APawn* UTekkenBlueprintLibrary::GetCameraPawn()
+{
     return NULL;
 }
 

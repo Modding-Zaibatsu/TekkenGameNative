@@ -29,7 +29,8 @@ UWindDirectionalSourceComponent* UDramaWindComponent::GetWindComponent() const {
 void UDramaWindComponent::DestroyWindDirectionalSource(UObject* WorldContextObject) {
 }
 
-void UDramaWindComponent::CreateWindDirectionalSource(UObject* WorldContextObject, bool StartAndEnable) {
+void UDramaWindComponent::CreateWindDirectionalSource(UObject* WorldContextObject, bool StartAndEnable)
+{
 }
 
 UDramaWindComponent::UDramaWindComponent() {
