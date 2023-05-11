@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "AkAudioEditorModule.h"
+#include "AKAudioEditorModule.h"
 #include "AkAudioBankFactory.h"
 
 #include "AkAudioBank.h"
