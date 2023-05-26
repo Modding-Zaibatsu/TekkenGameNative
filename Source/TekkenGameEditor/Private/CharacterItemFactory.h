@@ -8,7 +8,7 @@
  * 
  */
 UCLASS()
-class TEKKENGAME_API UCharacterItemFactory : public UFactory
+class UCharacterItemFactory : public UFactory
 {
 	GENERATED_BODY()
 	

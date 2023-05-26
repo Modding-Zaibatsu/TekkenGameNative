@@ -1,4 +1,4 @@
 #include "TekkenGameEditorModule.h"
 #include "Modules/ModuleManager.h"
 
-IMPLEMENT_MODULE(FDefaultGameModuleImpl, TekkenGameEditor);
+IMPLEMENT_GAME_MODULE(FDefaultGameModuleImpl, TekkenGameEditor);

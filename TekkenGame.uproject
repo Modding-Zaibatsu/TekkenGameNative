@@ -11,6 +11,14 @@
 			"AdditionalDependencies": [
 				"UnrealEd"
 			]
+		},
+		{
+			"Name": "TekkenGameEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"AdditionalDependencies": [
+				"UnrealEd"
+			]
 		}
 	]
 }

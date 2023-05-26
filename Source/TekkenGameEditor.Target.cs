@@ -20,6 +20,6 @@ public class TekkenGameEditorTarget : TargetRules
 		ref List<string> OutExtraModuleNames
 		)
 	{
-		OutExtraModuleNames.AddRange( new string[] { "TekkenGame" } );
+		OutExtraModuleNames.AddRange( new string[] { "TekkenGame", "TekkenGameEditor"} );
 	}
 }

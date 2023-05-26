@@ -3,20 +3,18 @@
 #pragma once
 
 #include "Factories/Factory.h"
-#include "CustomizeCharacterItemFactory.generated.h"
+#include "CharacterItemSetFactory.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class TEKKENGAME_API UCustomizeCharacterItemFactory : public UFactory
+class UCharacterItemSetFactory : public UFactory
 {
 	GENERATED_BODY()
 	
-public:
-	UCustomizeCharacterItemFactory();
+	UCharacterItemSetFactory();
 
-	// Begin UFactory Interface
 	virtual uint32 GetMenuCategories() const override;
 
 	virtual UObject* FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn) override;

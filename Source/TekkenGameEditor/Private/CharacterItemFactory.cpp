@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-#include "TekkenGameModule.h"
-#include "CharacterItemFactory.h"
 
+#include "TekkenGameEditorModule.h"
+#include "CharacterItemFactory.h"
 #include "CharacterItem.h"
 
 UCharacterItemFactory::UCharacterItemFactory() {
