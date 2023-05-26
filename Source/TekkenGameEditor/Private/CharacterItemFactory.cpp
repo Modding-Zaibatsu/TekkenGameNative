@@ -17,8 +17,7 @@ uint32 UCharacterItemFactory::GetMenuCategories() const
 
 UObject* UCharacterItemFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	UCharacterItem* CharacterItemAsset = NewObject<UCharacterItem>(InParent, Class, Name, Flags);
-	return CharacterItemAsset;
+	return NewObject<UCharacterItem>(InParent, Class, Name, Flags);
 }
 
 

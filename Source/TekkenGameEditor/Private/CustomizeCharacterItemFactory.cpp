@@ -17,6 +17,5 @@ uint32 UCustomizeCharacterItemFactory::GetMenuCategories() const
 
 UObject* UCustomizeCharacterItemFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
 {
-	UCustomizeCharacterItem* CustomizeCharacterItemAsset = NewObject<UCustomizeCharacterItem>(InParent, Class, Name, Flags);
-	return CustomizeCharacterItemAsset;
+	return NewObject<UCustomizeCharacterItem>(InParent, Class, Name, Flags);
 }
