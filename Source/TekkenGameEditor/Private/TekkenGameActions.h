@@ -24,6 +24,26 @@ private:
 	EAssetTypeCategories::Type MyAssetCategory;
 };
 
+// CHARACTER EXTRA ITEM ASSET
+
+class FCharacterExtraItemsAssetTypeActions : public FAssetTypeActions_Base
+{
+	
+public:
+
+	FCharacterExtraItemsAssetTypeActions(EAssetTypeCategories::Type InAssetCategory);
+
+	virtual bool CanFilter() override;
+	UClass* GetSupportedClass() const override;
+	virtual FText GetName() const override;
+	FColor GetTypeColor() const override;
+	uint32 GetCategories() override;
+
+private:
+	
+	EAssetTypeCategories::Type MyAssetCategory;
+};
+
 // CHARACTER ITEM ASSET
 
 class FCharacterItemAssetTypeActions : public FAssetTypeActions_Base

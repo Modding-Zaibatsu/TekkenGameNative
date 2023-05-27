@@ -4,6 +4,7 @@
 #include "TekkenGameActions.h"
 
 #include "AuraCharacterItem.h"
+#include "CharacterExtraItems.h"
 #include "CharacterItem.h"
 #include "CharacterItemOffsetVariation.h"
 #include "CharacterItemSet.h"
@@ -45,6 +46,38 @@ FColor FAuraCharacterItemAssetTypeActions::GetTypeColor() const
 }
 
 uint32 FAuraCharacterItemAssetTypeActions::GetCategories()
+{
+	return MyAssetCategory;
+}
+
+// CHARACTER EXTRAS ITEMS ASSET TYPE
+
+FCharacterExtraItemsAssetTypeActions::FCharacterExtraItemsAssetTypeActions(EAssetTypeCategories::Type InAssetCategory)
+{
+	MyAssetCategory = InAssetCategory;
+}
+
+bool FCharacterExtraItemsAssetTypeActions::CanFilter()
+{
+	return true;
+}
+
+UClass* FCharacterExtraItemsAssetTypeActions::GetSupportedClass() const
+{
+	return UCharacterExtraItems::StaticClass();
+}
+
+FText FCharacterExtraItemsAssetTypeActions::GetName() const
+{
+	return LOCTEXT("FCharacterExtraItemsAssetTypeActions", "Character Extra Items");
+}
+
+FColor FCharacterExtraItemsAssetTypeActions::GetTypeColor() const
+{
+	return FColor::Orange;
+}
+
+uint32 FCharacterExtraItemsAssetTypeActions::GetCategories()
 {
 	return MyAssetCategory;
 }

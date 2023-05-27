@@ -34,6 +34,7 @@ public:
 			LOCTEXT("TekkenGameAssetCategory", "TekkenGame"));
 
 		RegisterAssetTypeAction(AssetTools, MakeShareable(new FAuraCharacterItemAssetTypeActions(TekkenGameAssetCategoryBit)));
+		RegisterAssetTypeAction(AssetTools, MakeShareable(new FCharacterExtraItemsAssetTypeActions(TekkenGameAssetCategoryBit)));
 		RegisterAssetTypeAction(AssetTools, MakeShareable(new FCharacterItemAssetTypeActions(TekkenGameAssetCategoryBit)));
 		RegisterAssetTypeAction(AssetTools, MakeShareable(new FCharacterItemSetAssetTypeActions(TekkenGameAssetCategoryBit)));
 		RegisterAssetTypeAction(AssetTools, MakeShareable(new FCharacterItemSocketAssetTypeActions(TekkenGameAssetCategoryBit)));
