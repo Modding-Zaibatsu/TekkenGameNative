@@ -11,11 +11,6 @@ UCharItemOffsetVariationFactory::UCharItemOffsetVariationFactory()
 	SupportedClass = UCharacterItemOffsetVariation::StaticClass();
 }
 
-uint32 UCharItemOffsetVariationFactory::GetMenuCategories() const
-{
-	return 1 << 0 | 1 << 6;
-}
-
 UObject* UCharItemOffsetVariationFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags,
 	UObject* Context, FFeedbackContext* Warn)
 {

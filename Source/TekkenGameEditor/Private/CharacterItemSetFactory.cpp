@@ -11,11 +11,6 @@ UCharacterItemSetFactory::UCharacterItemSetFactory()
 	SupportedClass = UCharacterItemSet::StaticClass();
 }
 
-uint32 UCharacterItemSetFactory::GetMenuCategories() const
-{
-	return 1 << 0 | 1 << 6;
-}
-
 UObject* UCharacterItemSetFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags,
 	UObject* Context, FFeedbackContext* Warn)
 {

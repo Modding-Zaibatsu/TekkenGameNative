@@ -12,11 +12,6 @@ UAuraCharacterItemFactory::UAuraCharacterItemFactory()
 	SupportedClass = UAuraCharacterItem::StaticClass();
 }
 
-uint32 UAuraCharacterItemFactory::GetMenuCategories() const
-{
-	return 1 << 0 | 1 << 6;
-}
-
 UObject* UAuraCharacterItemFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags,
 	UObject* Context, FFeedbackContext* Warn)
 {

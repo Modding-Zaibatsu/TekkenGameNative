@@ -15,7 +15,7 @@ UAkAudioEventFactory::UAkAudioEventFactory()
 
 uint32 UAkAudioEventFactory::GetMenuCategories() const
 {
-	return 1 << 0 | 1 << 6;
+	return 1 << 6;
 }
 
 UObject* UAkAudioEventFactory::FactoryCreateNew(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags,

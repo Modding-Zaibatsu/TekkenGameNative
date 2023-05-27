@@ -11,11 +11,6 @@ UEffectCharacterItemFactory::UEffectCharacterItemFactory()
 	SupportedClass = UEffectCharacterItem::StaticClass();
 }
 
-uint32 UEffectCharacterItemFactory::GetMenuCategories() const
-{
-	return 1 << 0 | 1 << 6;
-}
-
 UObject* UEffectCharacterItemFactory::FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags,
 	UObject* Context, FFeedbackContext* Warn)
 {

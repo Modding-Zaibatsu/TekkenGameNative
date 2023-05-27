@@ -14,9 +14,6 @@ class UCharacterItemTexFactory : public UFactory
 	GENERATED_BODY()
 
 	UCharacterItemTexFactory();
-	
-	// Begin UFactory Interface
-	virtual uint32 GetMenuCategories() const override;
 
 	virtual UObject* FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn) override;
 	// End UFactory Interface

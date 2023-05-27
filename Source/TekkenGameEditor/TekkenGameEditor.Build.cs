@@ -3,28 +3,22 @@ using UnrealBuildTool;
 public class TekkenGameEditor : ModuleRules {
 	public TekkenGameEditor(TargetInfo Target)
     {
-        PublicIncludePaths.AddRange(
-            new string[] {
-                "TekkenGameEditor"
-            }
-        );
+        PrivateIncludePaths.Add("TekkenGameEditor/Private");
         
-        PublicDependencyModuleNames.AddRange(new string[] {
-            "AkAudio",
-            "AnimGraphRuntime",
+        PrivateDependencyModuleNames.AddRange(new string[] {
             "Core",
             "CoreUObject",
             "Engine",
             "InputCore",
-            "LevelSequence",
-            "MovieScene",
-            "MovieSceneTracks",
-            "NeoFur",
-            "ScaleformUI",
             "Slate",
             "SlateCore",
-            "UMG",
             "TekkenGame",
         });
+        
+        PrivateIncludePathModuleNames.AddRange(
+            new string[] {
+                "AssetTools"
+            }
+        );
     }
 }
